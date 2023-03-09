@@ -1,0 +1,121 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: Calibri;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+
+.box-item {
+    border: 1px solid orange;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 15px 0 15px;
+    box-sizing: border-box;
+}
+
+.item {
+    width: 320px;
+    border-radius: 10px;
+    border: 1px solid olivedrab;
+    margin-bottom: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-name {
+    color: olivedrab;
+}
+
+.item-id {
+    font-weight: bold;
+    font-size: 20px;
+    color: orange;
+    margin: 5px 0;
+}
+
+.item-button {
+    width: fit-content;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: 1px solid maroon;
+    color: maroon;
+    background-color: transparent;
+    transition: 1s;
+    border-radius: 10px;
+}
+
+.item-button:hover {
+    background-color: maroon;
+    color: antiquewhite;
+    transition: 1s;
+}
+
+.item-edit {
+    width: fit-content;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: 1px solid maroon;
+    color: maroon;
+    background-color: transparent;
+    transition: 1s;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.item-edit:hover {
+    background-color: maroon;
+    color: antiquewhite;
+    transition: 1s;
+}
+
+.modal {
+    visibility: hidden;
+    width: 300px;
+    background: bisque;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
+}
+
+.visible {
+    visibility: visible;
+}
+
+#btn-form {
+    background: darkturquoise;
+    color: aliceblue;
+    border: none;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
