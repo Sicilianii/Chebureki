@@ -25,3 +25,13 @@ if (isset($_POST['action_edit'])) {
     ]);
 }
 
+if (isset($_POST['action_new'])) {
+    $statement = $pdo->prepare(' INSERT INTO chebureki (id, name, price) VALUES (:id, :name, :price)');
+    $statement->execute([
+        'id' => $_POST['action_new'],
+        'name' => strip_tags($_POST['newName']),
+        'price' => strip_tags($_POST['newPrice'])
+    ]);
+}
+
+
