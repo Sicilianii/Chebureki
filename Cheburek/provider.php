@@ -1,11 +1,7 @@
 <?php
+
 $pdo = require_once 'db.php';
 
-$pdo->exec('CREATE TABLE chebureki (
-    id INTEGER PRIMARY KEY NOT NULL,
-    name VARCHAR(100) NOT NULL,
-    price INTEGER NOT NULL
-)');
 
 
 $statement = $pdo->query('SELECT * FROM chebureki');
